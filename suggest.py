@@ -51,7 +51,7 @@ if user_input:
     if suggested_words:
         st.write("Predicted next words:")
         for word in suggested_words:
-            word = str(word)
+            word = str(word).lower()
             st.write(user_input + ' ' + word)
     else:
         st.write("No predictions available. Please try a different input.")
